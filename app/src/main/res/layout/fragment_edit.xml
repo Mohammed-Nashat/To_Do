@@ -43,7 +43,7 @@
             android:layout_marginEnd="16dp"
             android:background="@drawable/custom_edittext"
             android:hint="Enter Task"
-
+            android:maxLines="1"
             android:padding="15dp"
             android:textColor="#4d0642"
             android:textColorHint="#4d0642"
@@ -75,6 +75,7 @@
             android:layout_margin="16dp"
             android:background="@drawable/custom_edittext"
             android:hint="Priority"
+            android:maxLines="1"
             android:padding="12dp"
             android:textColor="#4d0642"
             android:textColorHint="#4d0642"

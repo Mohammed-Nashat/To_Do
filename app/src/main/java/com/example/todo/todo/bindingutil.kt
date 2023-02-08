@@ -15,6 +15,7 @@ fun TextView.setTitle(item: ToDoEntity?) {
     }
 }
 
+
 @BindingAdapter("todoPriority")
 fun TextView.setPriority(item: ToDoEntity?) {
     item?.let {

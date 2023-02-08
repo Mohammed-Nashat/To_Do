@@ -16,6 +16,11 @@ class ToDoViewModel(
     private val viewModelJob = Job()
     private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)
 
+    private val _showNoData = MutableLiveData<Boolean>()
+    val showNoData : LiveData<Boolean>
+     get() = _showNoData
+
+
 
     private val _navigateToDetails = MutableLiveData<Long?>()
     val navigateToDetails : LiveData<Long?>

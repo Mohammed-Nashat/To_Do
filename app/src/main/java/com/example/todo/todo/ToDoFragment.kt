@@ -55,11 +55,19 @@ class ToDoFragment : Fragment() {
             it?.let {
                 adappter.submitList(it)
             }
+            if (it == null || it.isEmpty()){
+                Log.e("TAG" , "ffgsdfewfeeefefee")
+               binding.noDataTextView.visibility = View.VISIBLE
+            }
 
 
         })
 
         return binding.root
+    }
+
+    private fun invalidateShowNoData() {
+//        showNoData.value = remindersList.value == null || remindersList.value!!.isEmpty()
     }
 
 }

@@ -5,7 +5,6 @@
 
     <data>
 
-
         <variable
             name="viewModel"
             type="com.example.todo.todo.ToDoViewModel" />
@@ -65,6 +64,19 @@
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent" />
 
+                <TextView
+                    android:id="@+id/noDataTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/ic_no_data"
+                    android:gravity="center"
+                    android:text="No Data"
+                    android:textSize="@dimen/text_size_large"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rcToDoList"
                     android:layout_width="match_parent"
@@ -75,8 +87,7 @@
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="1.0"
-                    tools:listitem="@layout/item_view" />
+                    app:layout_constraintVertical_bias="1.0"/>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
