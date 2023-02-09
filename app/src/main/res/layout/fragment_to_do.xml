@@ -5,6 +5,7 @@
 
     <data>
 
+
         <variable
             name="viewModel"
             type="com.example.todo.todo.ToDoViewModel" />
@@ -70,6 +71,7 @@
                     android:layout_height="wrap_content"
                     android:drawableTop="@drawable/ic_no_data"
                     android:gravity="center"
+                    android:visibility="gone"
                     android:text="No Data"
                     android:textSize="@dimen/text_size_large"
                     app:layout_constraintBottom_toBottomOf="parent"
